@@ -1,8 +1,14 @@
-function App() {
+import React from "react";
+import "./index.css"
+import AppRoutes from "./utils/routes";
 
+function App() {
   return (
-    <h1>Hello World</h1>
-  )
+    <>
+      <AppRoutes/>
+    </>
+    
+  );
 }
 
-export default App
+export default App;
