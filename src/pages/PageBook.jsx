@@ -5,7 +5,7 @@ function PageBook() {
   return (
     <main className='flex flex-col items-center mt-10'>
       <strong className='text-base'>Pagina do Livro</strong>
-      <Link to="/list-books">Voltar</Link>
+      <Link to="/listBooks">Voltar</Link>
     </main>
     
   );

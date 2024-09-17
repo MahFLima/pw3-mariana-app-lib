@@ -6,7 +6,7 @@ function NavBar() {
 
   return (
     <>
-      <nav className="flex justify-between bg-blue-800 p-4 text-gray-100">
+      <nav className="flex justify-between bg-blue-800 p-4 text-gray-100 ">
         <ul className="hidden tablet:flex items-center justify-between">
           <li className="mr-4">
             <button>

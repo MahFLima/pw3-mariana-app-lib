@@ -4,7 +4,7 @@ function Home() {
   return (
     <main className='flex flex-col items-center justify-center p-4'>
       <strong className='text-2xl mb-1'>Bem Vindo ao&nbsp; 
-        <span className='text-blue-500'>
+        <span className='text-blue-800'>
           LIBRI
         </span>
       </strong>
