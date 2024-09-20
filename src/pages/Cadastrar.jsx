@@ -4,6 +4,7 @@ import Select from '../components/forms/Select';
 import Button from '../components/forms/Button';
 
 function Cadastrar() {
+
   return (
     <main className='flex flex-col items-center mt-8'>
       <strong className='text-blue-950 text-lg'>
