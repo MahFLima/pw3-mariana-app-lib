@@ -2,7 +2,7 @@ import React from 'react';
 
 import styles from './styles.module.css';
 
-function Input({type, text, name, placeHolder}) {
+function Input({type, text, name, placeHolder, handlerChangeBook}) {
   return (
     <div className={styles.form_control}>
       <label htmlFor={name}>{text}</label>
@@ -11,6 +11,7 @@ function Input({type, text, name, placeHolder}) {
         name={name} 
         id={name} 
         placeholder={placeHolder}
+        onChange={handlerChangeBook}
       />
     </div>
   );

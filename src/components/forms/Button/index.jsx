@@ -2,10 +2,10 @@ import React from 'react';
 
 import styles from './styles.module.css';
 
-function Button({rotulo}) {
+function Button({rotulo, type}) {
   return (
     <div>
-      <button className={styles.btn}>{rotulo}</button>
+      <button type={type} className={styles.btn}>{rotulo}</button>
     </div>
   );
 }
