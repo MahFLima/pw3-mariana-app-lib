@@ -9,6 +9,13 @@ function Cadastrar() {
 
   function handlerChangeBook(event) {
     setBook({ ...book, [event.target.name]: event.target.value });
+    console.log(book)
+  }
+
+  /* CAPTURA OS DADOS DA SELECT */
+  function handleChangeCategory(event) {
+    setBook({ ...book, cod_categoria: event.target.value });
+    console.log(book)
   }
 
   useEffect(() => {
@@ -85,8 +92,9 @@ function Cadastrar() {
         name="categoria"
         text="Escolha uma categoria de livro"
         options={listagemCategorias}
+        handleChangeCategory={handleChangeCategory}
       />
-      <Button type="submit" rotulo="Cadastrar" />
+      <Button type="submit" rotulo="Cadastrar"/>
     </form>
   );
 }
