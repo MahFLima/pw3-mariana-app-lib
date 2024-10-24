@@ -17,7 +17,6 @@ function ListBooks() {
       .then((res) => res.json())
       .then((data) => {
         setListagemBooks(data.data);
-        console.log(data.data);
       })
       .catch((err) => {
         console.log(error);
@@ -34,6 +33,7 @@ function ListBooks() {
               titulo={item.nome_livro}
               autor={item.autor_livro}
               imagem={imagem}
+              cod_livro={item.cod_livro}
             />
           );
         })}

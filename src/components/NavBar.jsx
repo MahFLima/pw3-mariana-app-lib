@@ -33,7 +33,7 @@ function NavBar() {
         </ul>
       </nav>
       {activeMenu && (
-        <ul className="fixed top-16 left-0 h-screen bg-blue-800 flex tablet:hidden flex-col">
+        <ul className="fixed top-14 left-0 h-screen bg-blue-800 flex tablet:hidden flex-col">
           <li className="p-4 text-white text-lg hover:opacity-70"><Link to="/">Home</Link></li>
           <li className="p-4 text-white text-lg hover:opacity-70">
             <Link to="/createBooks">Cadastrar Livro</Link>

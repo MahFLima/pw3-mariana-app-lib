@@ -10,6 +10,8 @@
     font-size: 1.2em;
     cursor: pointer;
     transition: .4s;
+    width: 100%;
+    max-width: 200px;
 }
 
 .btn:hover{

@@ -2,8 +2,10 @@ import React, { useState, useEffect } from "react";
 import Input from "../components/forms/Input";
 import Select from "../components/forms/Select";
 import Button from "../components/forms/Button";
+import { useNavigate } from "react-router-dom";
 
 function Cadastrar() {
+  const navigate = useNavigate()
   const [listagemCategorias, setListagemCategorias] = useState([]);
   const [book, setBook] = useState({});
 
@@ -51,8 +53,7 @@ function Cadastrar() {
     })
       .then((resp) => resp.json())
       .then((data) => {
-        console.log(data);
-        //navigate("/listBooks", { state: "LIVRO CADASTRADO COM SUCESSO!" });
+        navigate("/listBooks");
       })
       .catch((err) => {
         console.log(err);
