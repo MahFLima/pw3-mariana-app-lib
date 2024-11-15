@@ -6,6 +6,8 @@ import PageBook from "../pages/PageBook";
 import ListBooks from "../pages/ListBooks";
 import NavBar from "../components/NavBar";
 import Cadastrar from "../pages/Cadastrar";
+import DeleteBook from "../pages/DeleteBook";
+import UpdateBook from "../pages/UpdateBooks";
 
 const AppRoutes = () => {
   return (
@@ -16,6 +18,8 @@ const AppRoutes = () => {
         <Route path="/listBooks" element={<ListBooks />} />
         <Route path="/book/:id" element={<PageBook />} />
         <Route path="/createBooks" element={<Cadastrar/>} />
+        <Route path="/updateBook/:id" element={<UpdateBook/>} />
+        <Route path="/deleteBook/:id" element={<DeleteBook/>} />
       </Routes>
     </BrowserRouter>
   );

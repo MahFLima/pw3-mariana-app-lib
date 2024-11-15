@@ -1,6 +1,6 @@
 import { React, useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import Button from "../components/forms/Button";
+import Button from "../components/Button.jsx";
 import imagem from "../assets/livros/cavernas_aco.jpg";
 
 function PageBook() {
@@ -46,10 +46,20 @@ function PageBook() {
 
           <span className="text-base mb-4">{book.descricao_livro}</span>
 
-          <div className="flex justify-between">
-            <Button type="button" rotulo="EDITAR" />
+          <div className="flex justify-between mt-4">
+            <Button 
+              type="button" 
+              rotulo="EDITAR"
+              router='/updateBook'
+              cod_livro={`/${book.cod_livro}`}
+            />
+            <Button 
+              type="button" 
+              rotulo="EXCLUIR" 
+              router='/deleteBook' 
+              cod_livro={`/${book.cod_livro}`}
+            />
 
-            <Button type="button" rotulo="EXCLUIR" />
           </div>
         </div>
       </div>
